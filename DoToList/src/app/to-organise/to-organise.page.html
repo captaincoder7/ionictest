@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Düzenle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="duzeltilen">
+    <ion-list>
+      <ion-item>
+        <ion-label>Mesaj:</ion-label>
+        <ion-input clearInput [(ngModel)]="duzeltilen.feed"></ion-input>
+
+      </ion-item>
+      <ion-button (click)="duzelt()" expand="full" >
+        Düzenle
+      </ion-button>
+      <ion-button (click)="sil(id)" expand="full"color="danger" >
+       sil
+      </ion-button>
+    </ion-list>
+  </div>
+
+</ion-content>

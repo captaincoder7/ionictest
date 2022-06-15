@@ -1,0 +1,7 @@
+{
+  "name": "DoToList",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

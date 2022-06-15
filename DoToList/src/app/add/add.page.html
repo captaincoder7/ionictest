@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>add</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Yapılcaklar listesi:</ion-label>
+      <ion-textarea clearInput [(ngModel)]="eklenen.feed"></ion-textarea>
+      
+
+    </ion-item>
+    <ion-button (click)="ekle()" expand="full" >
+      Yapılcaklar Listesi Ekle
+    </ion-button>
+  </ion-list>
+
+
+</ion-content>

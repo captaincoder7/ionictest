@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Giriş
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-label fixed>Email</ion-label>
+    <ion-input type="text" [(ngModel)]="userData.email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed>Şifre</ion-label>
+    <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
+  </ion-item>
+  <br>
+  <ion-button [disabled]="userData.username =='' || userData.password ==''" (click)="giris()" expand="full" color="success">
+    Giriş Yap
+  </ion-button>
+  <ion-button [routerLink]="['/register']" expand="full" color="success">Kayıt Ol</ion-button>
+</ion-list>
+</ion-content>
