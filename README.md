@@ -1,0 +1,2 @@
+# ionictest
+ionic projemi deniyorum.
